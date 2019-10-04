@@ -1,10 +1,15 @@
 import React from 'react';
 
+import GlobalStyles from './styles/global';
+
+import Search from './components/Search';
+
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <Search />
+      <GlobalStyles />
+    </>
   );
 }
 
