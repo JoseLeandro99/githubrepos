@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Container, Title, Form, Input, Button, Results, Repo, Avatar } from './styles';
+import { Container, Title, Form, Input, Button, Results, Repo, Avatar, LabelName } from './styles';
 
 import api from '../../services/api';
 
@@ -43,6 +43,7 @@ function Search() {
 
             <Results>
                 {image && <Avatar src={image} alt="Avatar" />}
+                {image && <LabelName>{user}</LabelName>}
                 {repos.map(repo => (
                     <Repo key={repo.id}>
                         <h2 className="repo-title">{repo.name}</h2>

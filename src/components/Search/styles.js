@@ -90,5 +90,11 @@ export const Avatar = styled.img`
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    margin: 30px 0;
+    margin-top: 15px;
+`;
+
+export const LabelName = styled.h1`
+    color: #555555;
+    margin-top: 5px;
+    margin-bottom: 15px;
 `;
